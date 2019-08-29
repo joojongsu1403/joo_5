@@ -203,7 +203,7 @@ window.onload = function () {
         buildDay(); //1.
         initClock(); //1.
         underBarAnimation(); //1.
-        if(window.innerWidth  >= 1280){
+        if (window.innerWidth >= 1280) {
             initWeather(); //1.
         }
         initBg(); //1.
@@ -264,6 +264,11 @@ window.onload = function () {
                 testCount = 1;
             }
 
+        } else if (window.innerWidth <= 759) {
+            if (testCount === 0) {
+                initCircle();
+                testCount = 1;
+            }
         }
         if (testCount === 1) {
             return;
