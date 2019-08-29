@@ -164,7 +164,7 @@ window.onload = function () {
 
     function paintImages(imgNumber) {
         //배경 이미지
-        bgImages[0].style.backgroundImage = `url(header/${imgNumber+1}.jpg)`;
+        bgImages[0].style.backgroundImage = `url(images/header/${imgNumber+1}.jpg)`;
         picName(imgNumber);
     }
 
@@ -203,7 +203,7 @@ window.onload = function () {
         buildDay(); //1.
         initClock(); //1.
         underBarAnimation(); //1.
-        if (window.innerWidth >= 1280) {
+        if(window.innerWidth  >= 1280){
             initWeather(); //1.
         }
         initBg(); //1.
@@ -263,13 +263,13 @@ window.onload = function () {
                 initCircle(); //3.
                 testCount = 1;
             }
-
-        } else if (window.innerWidth <= 759) {
-            if (testCount === 0) {
+        } else if (window.innerWidth <= 759){
+            if(testCount === 0) {
                 initCircle();
                 testCount = 1;
-            }
+            } 
         }
+        
         if (testCount === 1) {
             return;
         }

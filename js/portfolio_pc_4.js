@@ -25,7 +25,7 @@
                     this.removeChild(creatDiv);
                 });
                     
-                } else if(window.innerWidth >= 760){
+                } else if(window.innerWidth <= 1279){
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
                     creatDiv.setAttribute('target', '_blank');
@@ -96,6 +96,8 @@
                 webFrameWheel.style.left = -num * 880 +'px';
             } else if( window.innerWidth >= 760) {
                 webFrameWheel.style.left = -num * 562 +'px';
+            } else if (window.innerWidth <= 759){
+                webFrameWheel.style.left = -num * 325 +'px';
             }
             
         }
@@ -152,7 +154,7 @@
         function initFour(){
             webArrowLeft.addEventListener('click', webPositionLeft);
             webArrowRight.addEventListener('click', webPositionRight);
-            webTitle();
+            webTitle(); // 4. 첫번째 함수
         }
 
         initFour();

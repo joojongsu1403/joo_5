@@ -647,6 +647,7 @@
         top: 0;
         left: 0;
         transition: 1s ease;
+        transition-duration: .6s;
     }
     /*web 작업물 이미지 각각 위치한 부분*/
     #select_frame > ul li {
@@ -654,7 +655,6 @@
         height: 100%;
         position: relative;
         float: left;
-        transition-duration: .6s;
     }
     #select_frame > ul li img {
         width: 100%;

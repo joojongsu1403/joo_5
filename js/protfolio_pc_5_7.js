@@ -14,7 +14,7 @@
 
  function picNum() {
      for (let i = 0; i < picLi.length; i++) {
-         picLi[i].style.backgroundImage = `url(sign/sign_pic_con_${i+1}.png)`;
+         picLi[i].style.backgroundImage = `url(images/sign/sign_pic_con_${i+1}.png)`;
      }
  }
  //picNum();
@@ -23,10 +23,10 @@
  //5. section work_sign 클릭 이벤트.
  const signArrowLeft = document.getElementById('sign_left');
  const signArrowRight = document.getElementById('sign_right');
- 
+
 
  let signCount = 0;
-
+ let carrerNumber;
 
  //signArrowLeft.addEventListener('click', signPositionLeft);
  //signArrowRight.addEventListener('click', signPositionRight);
@@ -35,26 +35,40 @@
      signCount--;
      if (signCount < 0) signCount = 0;
      signImgMov(signCount);
-     signArrow(number);
+     signArrow(carrerNumber);
  }
 
  function signPositionRight() {
      signCount++;
-     if (signCount > number - 1) signCount = number - 1;
+     if (signCount > carrerNumber - 1) signCount = number - 1;
      signImgMov(signCount);
-     signArrow(number);
+     signArrow(carrerNumber);
  }
 
 
  //5. section work_sign 카운터에 맞춰 포지션 변경
-const number = picLi.length / 2;
+
  function signImgMov(positionNum) {
-     if(window.innerWidth >= 1280){
-         signFrameChild[0].style.left = (-positionNum * 300) * 2 + 'px';
-     }else if(window.innerWidth >= 760){
-         signFrameChild[0].style.left = (-positionNum * 300) * 2 + 'px';
+     function signImgMovCount(positionNum, carrerItem, itemSize) {
+         signFrameChild[0].style.left = (-positionNum * carrerItem) * itemSize + 'px';
      }
-     
+
+     if (window.innerWidth >= 1280) {
+         signImgMovCount(positionNum, 3, 315);
+     } else if (window.innerWidth >= 760) {
+         signImgMovCount(positionNum, 2, 300);
+     } else if (window.innerWidth <= 759) {
+         signImgMovCount(positionNum, 2, 145);
+     }
+
+
+
+ }
+
+ if (window.innerWidth >= 1280) {
+     carrerNumber = picLi.length / 3;
+ } else if (window.innerWidth <= 1279) {
+     carrerNumber = picLi.length / 2;
  }
 
 
@@ -86,7 +100,6 @@ const number = picLi.length / 2;
  var copyText = function () {
      copyToAddress(eMailValue.replace(/(\s*)/g, ""))
  };
- eMailText.addEventListener('click', copyText);
 
  function copyToAddress(val) {
      const t = document.createElement("textarea");
@@ -98,10 +111,15 @@ const number = picLi.length / 2;
      alert('이메일 주소가 복사되었습니다.');
  }
 
- eMailText.addEventListener('mouseenter', function () {
-     eMailText.style.backgroundColor = "#cabbe9";
- });
 
- eMailText.addEventListener('mouseout', function () {
-     eMailText.style.backgroundColor = "#ffcef3";
- });
+
+ if (window.innerWidth >= 1280) {
+     eMailText.addEventListener('mouseenter', function () {
+         eMailText.style.backgroundColor = "#cabbe9";
+     });
+
+     eMailText.addEventListener('mouseout', function () {
+         eMailText.style.backgroundColor = "#ffcef3";
+     });
+     eMailText.addEventListener('click', copyText);
+ }
