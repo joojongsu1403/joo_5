@@ -15,7 +15,7 @@
         height: 100vh;
         margin: 0 auto;
         background-color: #a1eafb;
-        background-image: url(../header/1.jpg);
+        background-image: url(../images/header/1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -27,11 +27,11 @@
     }
     /*타이틀 요일*/
     #day_box {
-        width: 50%;
-        height: 3.4%;
+        width: 55%;
+        height: 3.5%;
         background-color: #cabbe9;
         position: absolute;
-        top: 29%;
+        top: 30%;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -49,9 +49,10 @@
     }
     #day_box p {
         font-family: 'NanumGothic';
-        font-size: 3.5vw;
+        font-size: 4.3vw;
         color: #fdfdfd;
         position: relative;
+        line-height: 3.5%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -92,7 +93,7 @@
         background-color: #ffcef3;
         transform: rotate(74deg);
         position: absolute;
-        left: 52.6%;
+        left: 52.8%;
         top: 40.5%;
         animation: rotate_animate 5s linear infinite;
         animation-delay: 6s;
@@ -183,8 +184,8 @@
 
     /*버전박스*/
     #ver_box {
-        width: 8%;
-        height: 2.4%;
+        width: 12%;
+        height: 3%;
         border: 1px solid #fdfdfd;
         text-align: center;
         position: relative;
@@ -194,12 +195,12 @@
     }
     #ver_box p {
         color: #fdfdfd;
-        font-size: 2.1vw;
+        font-size: 4vw;
         font-family: 'NanumGothic';
         width: 100%;
         height: 100%;
         position: relative;
-        padding-top: 2px;
+        padding-top: 1px;
         z-index: 1;
     }
     #ver_box P:before {
@@ -230,9 +231,9 @@
     #pic_master {
         color: #fdfdfd;
         font-family: 'NanumGothicLite';
-        font-size: 1.5vw;
+        font-size: 14px;
         position: absolute;
-        top: 2.3%;
+        top: 1.6%;
         right: 6.578%;
         opacity: 0.6;
     }
@@ -255,6 +256,7 @@
         display: none;
     }
     #scroll_down i {
+        font-size: 30px;
         position: relative;
         top: 0;
         left: 50%;
@@ -272,7 +274,9 @@
         left: 50%;
         transform: translate(-50%);
     }
-
+    #scroll_text{
+        display: none;
+    }
     @keyframes down_animate {
         0% {
             top: 0;
@@ -391,9 +395,10 @@
         width: 100%;
         height: 100%;
     }
+    /*about pic 저작권*/
     #about_profile_pic > p {
         color: #a1eafb;
-        font-size: 7px;
+        font-size: 14px;
         font-family: 'NanumGothic';
         margin-top: 8px;
         opacity: .7s;
@@ -441,7 +446,7 @@
     /*2.섹션 about 끝*/
     /*3. 섹션 skill 시작*/
     section#skill {
-        background-image: url(../skill/skill_bgimage.jpg);
+        background-image: url(../images/skill/skill_bgimage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -579,13 +584,13 @@
         opacity: .7;
     }
     #skill_left {
-        background-image: url(../skill/arrow_left_skill.png);
+        background-image: url(../images/skill/arrow_left_skill.png);
         background-repeat: no-repeat;
         background-size: cover;
         left: 25px;
     }
     #skill_right {
-        background-image: url(../skill/arrow_right_skill.png);
+        background-image: url(../images/skill/arrow_right_skill.png);
         background-repeat: no-repeat;
         background-size: cover;
         right: 25px;
@@ -593,7 +598,7 @@
     /*3. 섹션 skill 끝*/
     /*4. 섹션 web 시작*/
     section#web {
-        height: 520px;
+        height: 548px;
     }
     /*web 사이드 타이틀*/
     #web .wrap > p:nth-child(1) {
@@ -676,7 +681,7 @@
 
     /*web 작업물 이미지 아래 텍스트 박스*/
     #web_text_box {
-        width: 310px;
+        width: 314px;
         height: auto;
         position: absolute;
         top: 400px;
@@ -864,13 +869,13 @@
 
     #sign_left {
         left: 14px;
-        background-image: url(../sign/arrow_left_sign.png);
+        background-image: url(../images/sign/arrow_left_sign.png);
         background-size: cover;
     }
 
     #sign_right {
         right: 14px;
-        background-image: url(../sign/arrow_right_sign.png);
+        background-image: url(../images/sign/arrow_right_sign.png);
         background-size: cover;
     }
     /*5. 섹션 sign 끝*/
@@ -887,7 +892,7 @@
     #carrer_bg div {
         width: 445px;
         height: 195px;
-        background-image: url(../carrer/carrer_bg.png);
+        background-image: url(../images/carrer/carrer_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         opacity: .2;
@@ -982,7 +987,7 @@
     footer .wrap {
         width: 100%;
         height: 110px;
-        background-image: url(../footer/footer_bg.jpg);
+        background-image: url(../images/footer/footer_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
