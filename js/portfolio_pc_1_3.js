@@ -164,7 +164,7 @@ window.onload = function () {
 
     function paintImages(imgNumber) {
         //배경 이미지
-        bgImages[0].style.backgroundImage = `url(images/header/${imgNumber+1}.jpg)`;
+        bgImages[0].style.backgroundImage = `url(header/${imgNumber+1}.jpg)`;
         picName(imgNumber);
     }
 

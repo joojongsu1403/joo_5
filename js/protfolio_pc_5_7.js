@@ -14,7 +14,7 @@
 
  function picNum() {
      for (let i = 0; i < picLi.length; i++) {
-         picLi[i].style.backgroundImage = `url(images/sign/sign_pic_con_${i+1}.png)`;
+         picLi[i].style.backgroundImage = `url(sign/sign_pic_con_${i+1}.png)`;
      }
  }
  //picNum();
