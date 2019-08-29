@@ -780,7 +780,11 @@
         cursor: pointer;
         transition-duration: .6s;
     }
-
+        
+    .web_arrow i{
+        display: none;
+    }
+    
     #web_left {
         left: 222px;
         background-image: url(../web/arrow_left.png);
