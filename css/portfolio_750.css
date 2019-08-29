@@ -230,7 +230,7 @@
     /*사진 저작권자 이름*/
     #pic_master {
         color: #fdfdfd;
-        font-family: 'NanumGothicLite';
+        font-family: 'NanumGothic';
         font-size: 14px;
         position: absolute;
         top: 1.6%;
@@ -397,6 +397,7 @@
     }
     /*about pic 저작권*/
     #about_profile_pic > p {
+        width: 230px;
         color: #a1eafb;
         font-size: 12px;
         font-family: 'NanumGothic';
@@ -565,10 +566,11 @@
 
     }
     #skill .wrap > p {
+        width: 200px;
         font-family: 'NanumGothic';
         color: #fdfdfd;
         opacity: .7;
-        font-size: 10px;
+        font-size: 12px;
         position: absolute;
         bottom: 43px;
         left: 50%;
