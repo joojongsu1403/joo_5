@@ -1,0 +1,1011 @@
+@media all and (min-width: 760px) and (max-width: 1279px) {
+
+    body {
+        width: 100vw;
+        height: auto;
+        float: left;
+        margin: 0 auto;
+        background-color: #fdfdfd;
+        overflow-x: hidden;
+    }
+
+
+    /*1.헤더영역 시작*/
+    header {
+        /*width: 1280px;
+        height: 720px;*/
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: #a1eafb;
+        background-image: url(../header/1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition-duration: 1s;
+        overflow: hidden;
+    }
+    /*타이틀 요일*/
+    #day_box {
+        width: 37.894%;
+        height: 3.4%;
+        background-color: #cabbe9;
+        position: absolute;
+        top: 29%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #day_box:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-bottom: 5px solid #fdfdfd;
+        border-right: 5px solid #fdfdfd;
+        box-sizing: border-box;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    #day_box p {
+        font-family: 'NanumGothic';
+        font-size: 2.894vw;
+        color: #fdfdfd;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #day_box p span {
+        color: #ffcef3;
+    }
+
+    /*메인타이틀*/
+    #main_title {
+        width: 100%;
+        text-align: center;
+        font-family: 'Sanseriffic';
+        color: #fdfdfd;
+        font-size: 13.157vw;
+        position: absolute;
+        top: 38.4%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #main_title span {
+        display: inline-block;
+        position: relative;
+        opacity: 0;
+        transition: 1s;
+        transform: translateY(100px);
+    }
+    #main_title span:nth-child(2),
+    #main_title span:nth-child(9) {
+        color: #ffcef3;
+    }
+    #main_title span:nth-child(6) {
+        color: #cabbe9;
+    }
+    #main_title_backBox {
+        width: 13.421%;
+        padding-bottom: 13.421%;
+        background-color: #ffcef3;
+        transform: rotate(74deg);
+        position: absolute;
+        left: 52.3%;
+        top: 38.888%;
+        animation: rotate_animate 5s linear infinite;
+        animation-delay: 6s;
+        opacity: 0;
+    }
+    @keyframes rotate_animate {
+        0% {
+            transform: rotate(74deg);
+        }
+        10% {
+            transform: rotate(60deg);
+        }
+        13% {
+            transform: rotate(66deg);
+            border-radius: 50%;
+        }
+        30% {
+            transform: rotate(440deg);
+            border-radius: 0;
+        }
+        33% {
+            transform: rotate(430deg);
+        }
+        36% {
+            transform: rotate(434deg);
+        }
+        100% {
+            transform: rotate(434deg);
+        }
+    }
+
+    /*타이틀 아래 언더라인*/
+    #under_line {
+        width: 0;
+        height: 0.555%;
+        background-color: #fdfdfd;
+        position: absolute;
+        border-radius: 60%;
+        top: 52%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition-duration: 2s;
+    }
+
+    /*컨셉 타이틀*/
+    #concept_title {
+        font-family: 'Sanseriffic';
+        font-size: 2.6vw;
+        color: #fdfdfd;
+        position: absolute;
+        top: 53.5%;
+        left: 69.5%;
+        opacity: 0;
+        transition-duration: 2s;
+    }
+
+    /*방문환영*/
+    #welcome {
+        font-family: 'NanumGothic';
+        color: #fdfdfd;
+        font-size: 2.6vw;
+        display: inline-block;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #welcome span {
+        display: inline-block;
+        position: relative;
+        opacity: 0;
+        transition: .5s;
+        transition-delay: 3s;
+    }
+
+    /*점선*/
+    #dashed_box {
+        width: 86.842%;
+        height: 90%;
+        border: 1px solid white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*버전박스*/
+    #ver_box {
+        width: 6.578%;
+        height: 2.4%;
+        border: 1px solid #fdfdfd;
+        text-align: center;
+        position: relative;
+        top: 10%;
+        left: 13.157%;
+        overflow: hidden;
+    }
+    #ver_box p {
+        color: #fdfdfd;
+        font-size: 2.1vw;
+        font-family: 'NanumGothic';
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-top: 2px;
+        z-index: 1;
+    }
+    #ver_box P:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fdfdfd;
+        transform-origin: right;
+        transition: transform 0.5s ease;
+        transform: scaleX(0);
+        z-index: -1;
+    }
+
+    #ver_box:hover p {
+        color: #ffcef3;
+    }
+
+    #ver_box p:hover:before {
+        transform-origin: left;
+        transition: transform 0.5s ease;
+        transform: scaleX(1);
+    }
+
+    /*사진 저작권자 이름*/
+    #pic_master {
+        color: #fdfdfd;
+        font-family: 'NanumGothicLite';
+        font-size: 1.5vw;
+        position: absolute;
+        top: 3.2%;
+        right: 6.578%;
+        opacity: 0.6;
+    }
+
+    #pic_master span {
+        transition-duration: 3s;
+    }
+
+
+    /*스크롤아이콘*/
+    #scroll_down {
+        width: 6.25%;
+        height: 10%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #scroll_down img {
+        display: none;
+    }
+    #scroll_down i {
+        position: relative;
+        top: 0;
+        left: 50%;
+        color: #fdfdfd;
+        transform: translateX(-50%);
+        animation: down_animate 5s linear infinite;
+        animation-delay: 6s;
+    }
+    #scroll_down p {
+        color: #fdfdfd;
+        margin-top: 20%;
+        font-family: 'NanumGothic';
+        font-size: 2.1vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    @keyframes down_animate {
+        0% {
+            top: 0;
+        }
+        10% {
+            top: 1vw;
+        }
+        20% {
+            top: -0.3vw;
+        }
+        30% {
+            top: 0;
+        }
+        100% {
+            top: 0;
+        }
+    }
+
+    /*날씨*/
+    #weather_box {
+        width: 20.394%;
+        height: 9.8%;
+        position: absolute;
+        right: 13.157%;
+        bottom: 10%;
+    }
+    #weather_box li {
+        color: #fdfdfd;
+        font-family: 'NanumGothic';
+    }
+    #weather_box li:nth-child(1) {
+        width: 100%;
+        height: 28%;
+        line-height: 3.4vw;
+        font-size: 3.4vw;
+        float: right;
+        text-align: right;
+    }
+    #weather_box li:nth-child(2) {
+        width: 30%;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 6%;
+        float: left;
+    }
+    #weather_box #weather img {
+        width: 100%;
+        height: 100%;
+    }
+    #weather_box li:nth-child(3) {
+        margin-top: 6.122%;
+        font-size: 5.2vw;
+        float: right;
+    }
+    #weather_box a {
+        float: right;
+        font-size: 1.5vw;
+        color: #fdfdfd;
+    }
+    #weather_box a:hover span {
+        color: orangered;
+        transition-duration: .5s;
+    }
+
+    /*1.헤더영역 끝*/
+    /*섹션 공통*/
+    section {
+        width: 100%;
+        height: 1000px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .wrap {
+        width: 760px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    /*섹션 공통 끝*/
+    /*2.섹션 about 시작*/
+    section#about {
+        height: 1030px;
+    }
+    /*about 마카롱 위치*/
+    #about_macaron_box {
+        width: 590px;
+        height: 450px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+
+    #about_macaron_box img {
+        position: absolute;
+    }
+
+    #about_macaron_box img:nth-child(1) {
+        width: 172px;
+        top: 12px;
+        left: 0;
+        transform: rotate(16deg);
+    }
+
+    #about_macaron_box img:nth-child(2) {
+        width: 136px;
+        top: 130px;
+        left: 120px;
+        transform: rotate(336deg);
+    }
+
+    #about_macaron_box img:nth-child(3) {
+        width: 70px;
+        top: 338px;
+        left: 440px;
+        transform: rotate(16deg);
+    }
+
+    #about_macaron_box img:nth-child(4) {
+        width: 100px;
+        top: 394px;
+        left: 468px;
+        transform: rotate(346deg);
+    }
+    /*about 타이틀 박스*/
+    #about_title {
+        width: 452px;
+        height: 68px;
+        background-color: #ffcef3;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about_title p {
+        font-size: 62px;
+        color: #fdfdfd;
+        font-family: 'Sanseriffic';
+        text-align: center;
+    }
+    /*about 사진*/
+    #about_profile_pic {
+        width: 260px;
+        height: 260px;
+        background-color: #fdfdfd;
+        border: 5px solid #a1eafb;
+        border-radius: 4px;
+        position: absolute;
+        top: 305px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about_profile_pic > p {
+        color: #a1eafb;
+        font-size: 14px;
+        font-family: 'NanumGothic';
+        margin-top: 16px;
+        opacity: .7s;
+    }
+    /*about 프로필*/
+    #about_profile {
+        width: 395px;
+        height: 208px;
+        position: absolute;
+        top: 668px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about_profile ul {
+        width: 100%;
+        padding: 5px 0px;
+        float: left;
+        margin-bottom: 18px;
+    }
+
+    #about_profile ul li {
+        float: left;
+        font-size: 20px;
+        font-family: 'NanumGothic';
+    }
+
+    #about_profile ul li:nth-child(1) {
+        width: 162px;
+        color: #cabbe9;
+    }
+
+    #about_profile ul li:nth-child(2) {
+        width: auto;
+        color: #808080;
+    }
+
+    /*2.섹션 about 끝*/
+    /*3. 섹션 skill 시작*/
+    section#skill {
+        background-image: url(../skill/skill_bgimage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 810px;
+    }
+    #chart_box {
+        width: 560px;
+        height: 606px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .circle_chart {
+        width: 234px;
+        height: 300px;
+        position: absolute;
+        text-align: center;
+    }
+    .circle_chart:nth-child(2) {
+        bottom: 0;
+    }
+    .circle_chart:nth-child(3) {
+        right: 0;
+        top: 0;
+    }
+    .circle_chart:nth-child(4) {
+        right: 0;
+        bottom: 0;
+    }
+
+    /*skill 원 부분*/
+    .circle_chart .circle {
+        width: 234px;
+        height: 234px;
+        float: left;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px 0px rgba(202, 187, 233, .7);
+        position: relative;
+    }
+    .circle_chart:nth-child(2) .circle {
+        margin-top: 20px;
+    }
+    .circle_chart:nth-child(4) .circle {
+        margin-top: 20px;
+    }
+    /*skill 원 안쪽 그라데이션 부분*/
+    .circle_chart .circle:before {
+        content: '';
+        display: block;
+        width: 170px;
+        height: 170px;
+        background: linear-gradient(-45deg, #ffcef3, #cabbe9, #a1eafb);
+        border-radius: 50%;
+        border: 3px solid #fdfdfd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*skill 원 안쪽 스킬 로고 부분*/
+    .circle_chart .circle li {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    /*skill 원 안쪽 스킬 로고 틀 부분*/
+    .circle_chart:nth-child(3) .circle li {
+        width: 118px;
+    }
+    .circle_chart:nth-child(4) .circle li {
+        width: 55px;
+    }
+
+    /*skill 원 안쪽 스킬 로고 이미지 위치 조정 부분*/
+    .circle_chart .circle li img {
+        position: absolute;
+        top: -6px;
+        left: -5px;
+    }
+    .circle_chart:nth-child(2) .circle li img {
+        left: -96px;
+    }
+    .circle_chart:nth-child(3) .circle li img {
+        left: -191px;
+    }
+    .circle_chart:nth-child(4) .circle li img {
+        left: -330px;
+    }
+
+    /*skill 원 안쪽 스킬 이름*/
+    .circle_chart p {
+        width: 100%;
+        height: auto;
+        float: left;
+        color: #fdfdfd;
+        font-size: 28px;
+        font-family: 'Sanseriffic';
+        margin-top: 16px;
+    }
+    #skill .wrap > p {
+        font-family: 'NanumGothic';
+        color: #fdfdfd;
+        opacity: .7;
+        font-size: 14px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+    /*3. 섹션 skill 끝*/
+    /*4. 섹션 web 시작*/
+    section#web {
+        height: 924px;
+    }
+    /*web 사이드 타이틀*/
+    #web .wrap > p:nth-child(1) {
+        font-family: 'NanumGothic';
+        font-size: 16px;
+        color: #a1eafb;
+        float: left;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    /*web 메인 타이틀*/
+    #web .wrap > p:nth-child(2) {
+        font-size: 60px;
+        font-family: 'Sanseriffic';
+        color: #a1eafb;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*web 작업물 이미지 프레임*/
+    #select_frame {
+        width: 562px;
+        height: 350px;
+        position: absolute;
+        top: 275px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    /*web 작업물 이미지 뒷편에 이름*/
+    #select_frame > p:nth-child(1) {
+        display: none;
+    }
+    /*web 작업물 이미지 앞쪽에 mouseover 요청문구*/
+    #select_frame > p:nth-child(2) {
+        display: none;
+    }
+    /*web 작업물 이미지 전체 크기, 포지션 부분*/
+    #select_frame > ul {
+        width: 2248px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s ease;
+    }
+    /*web 작업물 이미지 각각 위치한 부분*/
+    #select_frame > ul li {
+        width: 562px;
+        height: 100%;
+        position: relative;
+        float: left;
+        transition-duration: .6s;
+    }
+    #select_frame > ul li img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /*web 작업물 이미지 hover시 js로 해당 div 생성되었을 때*/
+    .select_box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: .6s;
+        cursor: pointer;
+
+    }
+
+    /*web 작업물 프레임 안에 이미지 크기*/
+    .web_hover > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*web 작업물 이미지 아래 텍스트 박스*/
+    #web_text_box {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        top: 674px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #web_text_box > ul {
+        width: 100%;
+        height: auto;
+        padding: 4px;
+        float: left;
+    }
+
+    #web_text_box ul li {
+        float: left;
+        color: #a1eafb;
+        font-size: 24px;
+        font-family: 'Sanseriffic';
+        position: relative;
+        top: 0;
+        transition-duration: .6s;
+    }
+
+    #web_text_box ul li:nth-child(2) {
+        color: #808080;
+        margin-left: 7px;
+        position: relative;
+    }
+
+    /*web 화살표 아래 안내 문구*/
+    #web_click_guide {
+        display: none;
+    }
+
+    /*web 화살표*/
+    .web_arrow {
+        width: 20px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition-duration: .6s;
+    }
+
+    #web_left {
+        left: 50px;
+        background-image: url(../web/arrow_left.png);
+        background-size: cover;
+        opacity: .2;
+    }
+
+    #web_right {
+        right: 50px;
+        background-image: url(../web/arrow_right.png);
+        background-size: cover;
+    }
+
+    /*4. 섹션 web 끝*/
+    /*5. 섹션 sign 시작*/
+    section#sign {
+        height: 760px;
+        background: linear-gradient(-45deg, #ffcef3 20%, #cabbe9, #a1eafb 80%);
+    }
+    /*sign 사이드 타이틀*/
+    #sign .wrap > p:nth-child(1) {
+        font-family: 'NanumGothic';
+        font-size: 16px;
+        color: #fdfdfd;
+        float: left;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    /*sign 메인 타이틀*/
+    #sign_title {
+        width: 400px;
+        height: 100px;
+        position: absolute;
+        top: 166px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #sign_title_bg {
+        width: 380px;
+        height: 38px;
+        position: absolute;
+    }
+    #sign_title_bg:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 6px;
+        left: 4px;
+        background-color: #fdfdfd;
+        border-radius: 19px;
+        z-index: -1;
+    }
+    #sign_title_bg:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #ffcef3;
+        border-radius: 19px;
+        z-index: -1;
+    }
+    #sign_title > p {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -32px;
+        color: #fdfdfd;
+        font-size: 60px;
+        font-family: 'Sanseriffic';
+    }
+
+    /*sign 서브 타이틀*/
+    #sign_sub_title {
+        width: 274px;
+        height: 26px;
+        background-color: #ffcef3;
+        border-radius: 13px;
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        line-height: 26px;
+        font-size: 20px;
+        color: #fdfdfd;
+    }
+
+    /*sign 이미지 프레임*/
+    #sign_frame {
+        width: 560px;
+        height: 260px;
+        position: absolute;
+        top: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    /*sign 이미지 전체 width*/
+    #sign_frame > ul {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition-duration: .6s;
+    }
+    /*sign 이미지 각각 사이즈*/
+    .sign_pic {
+        width: 260px;
+        height: 100%;
+        margin-right: 40px;
+    }
+    .sign_pic:last-child {
+        margin-right: 0;
+    }
+
+    /*sign 화살표*/
+    .sign_arrow {
+        width: 20px;
+        height: 40px;
+        position: absolute;
+        top: 460px;
+        cursor: pointer;
+        transition-duration: .6s;
+    }
+
+    #sign_left {
+        left: 50px;
+        background-image: url(../sign/arrow_left_sign.png);
+        background-size: cover;
+        opacity: .2;
+    }
+
+    #sign_right {
+        right: 50px;
+        background-image: url(../sign/arrow_right_sign.png);
+        background-size: cover;
+    }
+    /*5. 섹션 sign 끝*/
+    /*6. 섹션 carrer 시작*/
+    section#carrer {
+        height: 1118px;
+    }
+
+    /*carrer 배경*/
+    #carrer_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    #carrer_bg div {
+        width: 890px;
+        height: 390px;
+        background-image: url(../carrer/carrer_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .2;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*carrer 마카롱*/
+    #carrer_bg img {
+        height: auto;
+        position: absolute;
+        opacity: .2;
+    }
+    #carrer_bg img:nth-child(2) {
+        width: 196px;
+        top: 260px;
+        right: 120px;
+        transform: rotate(20deg);
+    }
+    #carrer_bg img:nth-child(3) {
+        width: 150px;
+        top: 440px;
+        right: 150px;
+        transform: rotate(-20deg);
+    }
+    /*carrer 텍스트 박스*/
+    #carrer_text_out_box {
+        width: 560px;
+        height: 918px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /*carrer 텍스트 구획 박스*/
+    .carrer_text_in_box {
+        width: 445px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /*carrer 텍스트 구획 박스 2*/
+    .carrer_text_in_box:nth-child(2) {
+        margin-top: 10px;
+    }
+    /*carrer 텍스트 구획 타이틀*/
+    .carrer_text_in_box p {
+        font-size: 50px;
+        font-family: 'Sanseriffic';
+        margin-bottom: 16px;
+        margin-left: 50px;
+        color: #ffcef3;
+        margin-top: 26px;
+    }
+    .carrer_text_in_box:nth-child(1) p {
+        margin-top: 50px;
+    }
+    /*carrer 텍스트 구획 내용*/
+    .carrer_text_in_box li {
+        width: 100%;
+        height: 100%;
+        font-family: 'NanumGothic';
+        font-size: 20px;
+        color: #808080;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        line-height: 30px;
+    }
+    .carrer_text_in_box:nth-child(3) > p {
+        margin-bottom: 26px;
+        color: #cabbe9;
+    }
+    .carrer_text_in_box:nth-child(3) > li {
+        /*margin-bottom: 34px;*/
+    }
+
+    /*6. 섹션 carrer 끝*/
+    /*7. footer 시작*/
+    footer {
+        width: 100%;
+        height: 270px;
+        margin: 0 auto;
+        float: left;
+    }
+
+    footer .wrap {
+        width: 100%;
+        height: 220px;
+        background-image: url(../footer/footer_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        float: left;
+        text-align: center;
+    }
+
+    footer div p {
+        font-size: 30px;
+        color: #fdfdfd;
+        margin-top: 50px;
+        font-family: 'Sanseriffic';
+    }
+    footer div p:nth-child(1) {
+        display: none;
+    }
+    footer div #email {
+        width: 560px;
+        height: 70px;
+        background-color: #ffcef3;
+        border: 3px solid #fdfdfd;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        line-height: 70px;
+        color: #fdfdfd;
+        font-size: 44px;
+        font-family: 'Sanseriffic';
+        cursor: pointer;
+    }
+
+
+
+    /*7. footer 끝*/
+}
