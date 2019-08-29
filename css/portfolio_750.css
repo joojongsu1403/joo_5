@@ -15,7 +15,7 @@
         height: 100vh;
         margin: 0 auto;
         background-color: #a1eafb;
-        background-image: url(../images/header/1.jpg);
+        background-image: url(../header/1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -398,7 +398,7 @@
     /*about pic 저작권*/
     #about_profile_pic > p {
         color: #a1eafb;
-        font-size: 14px;
+        font-size: 12px;
         font-family: 'NanumGothic';
         margin-top: 8px;
         opacity: .7s;
@@ -446,7 +446,7 @@
     /*2.섹션 about 끝*/
     /*3. 섹션 skill 시작*/
     section#skill {
-        background-image: url(../images/skill/skill_bgimage.jpg);
+        background-image: url(../skill/skill_bgimage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -584,13 +584,13 @@
         opacity: .7;
     }
     #skill_left {
-        background-image: url(../images/skill/arrow_left_skill.png);
+        background-image: url(../skill/arrow_left_skill.png);
         background-repeat: no-repeat;
         background-size: cover;
         left: 25px;
     }
     #skill_right {
-        background-image: url(../images/skill/arrow_right_skill.png);
+        background-image: url(../skill/arrow_right_skill.png);
         background-repeat: no-repeat;
         background-size: cover;
         right: 25px;
@@ -869,13 +869,13 @@
 
     #sign_left {
         left: 14px;
-        background-image: url(../images/sign/arrow_left_sign.png);
+        background-image: url(../sign/arrow_left_sign.png);
         background-size: cover;
     }
 
     #sign_right {
         right: 14px;
-        background-image: url(../images/sign/arrow_right_sign.png);
+        background-image: url(../sign/arrow_right_sign.png);
         background-size: cover;
     }
     /*5. 섹션 sign 끝*/
@@ -892,7 +892,7 @@
     #carrer_bg div {
         width: 445px;
         height: 195px;
-        background-image: url(../images/carrer/carrer_bg.png);
+        background-image: url(../carrer/carrer_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         opacity: .2;
@@ -987,7 +987,7 @@
     footer .wrap {
         width: 100%;
         height: 110px;
-        background-image: url(../images/footer/footer_bg.jpg);
+        background-image: url(../footer/footer_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
