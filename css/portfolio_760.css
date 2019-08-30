@@ -256,6 +256,7 @@
         display: none;
     }
     #scroll_down i {
+        font-size: 70px;
         position: relative;
         top: 0;
         left: 50%;
@@ -273,7 +274,9 @@
         left: 50%;
         transform: translate(-50%);
     }
-
+    #scroll_text{
+        display: none;
+    }
     @keyframes down_animate {
         0% {
             top: 0;
@@ -294,49 +297,9 @@
 
     /*날씨*/
     #weather_box {
-        width: 20.394%;
-        height: 9.8%;
-        position: absolute;
-        right: 13.157%;
-        bottom: 10%;
+        display: none;
     }
-    #weather_box li {
-        color: #fdfdfd;
-        font-family: 'NanumGothic';
-    }
-    #weather_box li:nth-child(1) {
-        width: 100%;
-        height: 28%;
-        line-height: 3.4vw;
-        font-size: 3.4vw;
-        float: right;
-        text-align: right;
-    }
-    #weather_box li:nth-child(2) {
-        width: 30%;
-        height: auto;
-        margin-left: 10%;
-        margin-top: 6%;
-        float: left;
-    }
-    #weather_box #weather img {
-        width: 100%;
-        height: 100%;
-    }
-    #weather_box li:nth-child(3) {
-        margin-top: 6.122%;
-        font-size: 5.2vw;
-        float: right;
-    }
-    #weather_box a {
-        float: right;
-        font-size: 1.5vw;
-        color: #fdfdfd;
-    }
-    #weather_box a:hover span {
-        color: orangered;
-        transition-duration: .5s;
-    }
+    
 
     /*1.헤더영역 끝*/
     /*섹션 공통*/
@@ -477,6 +440,10 @@
         background-position: center;
         height: 810px;
     }
+    #m_chart_position{
+        width: 560px;
+        height: 606px;   
+    }
     #chart_box {
         width: 560px;
         height: 606px;
@@ -484,6 +451,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .m_chart_in_box{
+        width: 186px;
+        height: 450px;
+    }
+    .m_chart_in_box:nth-child(2){
+        right: 0;
     }
     .circle_chart {
         width: 234px;
@@ -494,11 +468,11 @@
     .circle_chart:nth-child(2) {
         bottom: 0;
     }
-    .circle_chart:nth-child(3) {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) {
         right: 0;
         top: 0;
     }
-    .circle_chart:nth-child(4) {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) {
         right: 0;
         bottom: 0;
     }
@@ -545,10 +519,10 @@
     }
 
     /*skill 원 안쪽 스킬 로고 틀 부분*/
-    .circle_chart:nth-child(3) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li {
         width: 118px;
     }
-    .circle_chart:nth-child(4) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li {
         width: 55px;
     }
 
@@ -561,10 +535,10 @@
     .circle_chart:nth-child(2) .circle li img {
         left: -96px;
     }
-    .circle_chart:nth-child(3) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li img {
         left: -191px;
     }
-    .circle_chart:nth-child(4) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li img {
         left: -330px;
     }
 
@@ -623,10 +597,6 @@
     }
     /*web 작업물 이미지 뒷편에 이름*/
     #select_frame > p:nth-child(1) {
-        display: none;
-    }
-    /*web 작업물 이미지 앞쪽에 mouseover 요청문구*/
-    #select_frame > p:nth-child(2) {
         display: none;
     }
     /*web 작업물 이미지 전체 크기, 포지션 부분*/
@@ -719,11 +689,10 @@
         cursor: pointer;
         transition-duration: .6s;
     }
-
     .web_arrow i{
         display: none;
     }
-    
+
     #web_left {
         left: 50px;
         background-image: url(../web/arrow_left.png);
@@ -802,7 +771,7 @@
     #sign_sub_title {
         width: 274px;
         height: 26px;
-        background-color: #ffcef3;
+        background-color: #fdfdfd;
         border-radius: 13px;
         position: absolute;
         top: 250px;
@@ -811,7 +780,7 @@
         text-align: center;
         line-height: 26px;
         font-size: 20px;
-        color: #fdfdfd;
+        color: #ffcef3;
     }
 
     /*sign 이미지 프레임*/

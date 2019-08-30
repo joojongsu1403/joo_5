@@ -283,7 +283,10 @@
         font-family: 'NanumGothic';
         font-size: 1.2vw;
     }
-
+    #m_scroll_text{
+        display: none;
+    }
+    
     @keyframes down_animate {
         0% {
             top: 0;
@@ -499,12 +502,23 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .m_chart_in_box{
+        width: 100%;
+        height: 100%;
+    }
+    .m_chart_in_box:nth-child(2){
+       padding-left: 44px
+    }
     .circle_chart {
         width: 234px;
         height: 300px;
         text-align: center;
+        float: left;
+        margin-right: 50px;
     }
-
+    .circle_chart:nth-child(2){
+        margin-right: 0;
+    }
     /*skill 원 부분*/
     .circle_chart .circle {
         width: 234px;
@@ -542,10 +556,10 @@
     }
 
     /*skill 원 안쪽 스킬 로고 틀 부분*/
-    .circle_chart:nth-child(3) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li {
         width: 118px;
     }
-    .circle_chart:nth-child(4) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li {
         width: 55px;
     }
 
@@ -558,10 +572,10 @@
     .circle_chart:nth-child(2) .circle li img {
         left: -96px;
     }
-    .circle_chart:nth-child(3) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li img {
         left: -191px;
     }
-    .circle_chart:nth-child(4) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li img {
         left: -330px;
     }
 
@@ -628,16 +642,7 @@
         font-size: 24px;
         color: #ffcef3;
     }
-    /*web 작업물 이미지 앞쪽에 mouseover 요청문구*/
-    #select_frame > p:nth-child(2) {
-        color: #ffcef3;
-        font-family: 'Sanseriffic';
-        font-size: 20px;
-        position: absolute;
-        bottom: 34px;
-        right: 34px;
-        z-index: 1;
-    }
+    
     /*web 작업물 이미지 전체 크기, 포지션 부분*/
     #select_frame > ul {
         width: 3320px;
@@ -657,7 +662,6 @@
         position: relative;
         transition-duration: .6s;
     }
-    
 
     /*web 작업물 이미지 hover시 js로 해당 div 생성되었을 때*/
     .select_box {
@@ -690,7 +694,7 @@
         cursor: pointer;
         z-index: 1;
     }
-    
+
     /*web 작업물 프레임 안에 이미지 크기*/
     .web_hover > img {
         width: 100%;
@@ -751,11 +755,10 @@
         cursor: pointer;
         transition-duration: .6s;
     }
-        
     .web_arrow i{
         display: none;
     }
-    
+
     #web_left {
         left: 222px;
         background-image: url(../web/arrow_left.png);
@@ -834,7 +837,7 @@
     #sign_sub_title {
         width: 274px;
         height: 26px;
-        background-color: #ffcef3;
+        background-color: #fdfdfd;
         border-radius: 13px;
         position: absolute;
         top: 180px;
@@ -843,7 +846,7 @@
         text-align: center;
         line-height: 26px;
         font-size: 20px;
-        color: #fdfdfd;
+        color: #ffcef3;
     }
 
     /*sign 이미지 프레임*/
@@ -1045,7 +1048,12 @@
         color: #fdfdfd;
         margin-top: 40px;
     }
-    
+    footer div p span{
+        font-size: 18px;
+    }
+    footer div p:nth-child(2){
+        display: none;
+    }
     footer div #email {
         width: 790px;
         height: 88px;

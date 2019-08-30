@@ -54,9 +54,10 @@
         </div>
         <p id="pic_master">Photo by Keila Hötzel on Unsplash</p>
         <div id="scroll_down">
-            <i class="fas fa-arrow-circle-down fa-2x"></i>
+            <i class="fas fa-arrow-circle-down"></i>
             <img src="header/header_scrolldown_icon.png" alt=""/>
-            <p>touchMove</p>
+            <p id="m_scroll_text">touchMove</p>
+            <p id="scroll_text">scrollDown</p>
         </div>
         <ul id="weather_box">
             <li id="weather_time"></li>
@@ -77,7 +78,7 @@
                 <p>ABout Me</p>
             </div>
             <div id="about_profile_pic">
-                <img src="about/about_pic.jpg" alt="" />
+                <img src="images/about/about_pic.jpg" alt="" />
                 <p>Photo by Alexandru Acea on Unsplash</p>
             </div>
             <div id="about_profile">
@@ -104,6 +105,7 @@
         <div class="wrap">
            <div id="m_chart_position">
             <ul id="chart_box">
+               <div class="m_chart_in_box">
                 <li class="circle_chart">
                     <ul class="circle">
                         <li>
@@ -120,6 +122,8 @@
                     </ul>
                     <p>Illustrator</p>
                 </li>
+                </div>
+                <div class="m_chart_in_box">
                 <li class="circle_chart">
                     <ul class="circle">
                         <li>
@@ -136,6 +140,7 @@
                     </ul>
                     <p>Javascript / Jquery</p>
                 </li>
+                </div>
             </ul>
             </div>
             <div id="skill_left" class="skill_arrow"></div>
@@ -148,7 +153,6 @@
             <p>Web Design &#38; Web Front End</p>
             <p>WORK_WEB</p>
             <div id="select_frame">
-                <p>JOO JONG SU</p>
                 <ul id="web_wheel">
                     <li class="web_hover">
                         <img src="web/portfolio_ver2.jpg" alt="개인 포트폴리오 두번째" />
@@ -192,7 +196,7 @@
             </div>
             <div id="sign_sub_title">간판 및 랩핑 디자인, 시공</div>
             <div id="sign_frame">
-                <ul></ul>
+                <ul id="sign_move_point"></ul>
             </div>
             <div id="sign_left" class="sign_arrow"></div>
             <div id="sign_right" class="sign_arrow"></div>
@@ -229,7 +233,7 @@
     </section>
     <footer>
         <div class="wrap">
-            <p>아래를 클릭하면 주소가 복사됩니다.</p>
+            <p>아래를 클릭하면 주소가 복사됩니다. <span>(현재 pc에서만 가능)</span></p>
             <p>CONTACT / e - mail</p>
             <div id="email">joojongsu1403 @ gmail.com</div>
         </div>
@@ -241,43 +245,10 @@
     <script src="js/textyle.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/3903d10c0e.js"></script>
     <script src="js/getStyle.js" type="text/javascript"></script>
+    <script src="js/selfSwife.js" type="text/javascript"></script>
     <script src="js/portfolio_pc_1_3.js" type="text/javascript"></script>
     <script src="js/portfolio_pc_4.js" type="text/javascript"></script>
     <script src="js/protfolio_pc_5_7.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        
-        
-        
-        
-        //보관용. 카운터식 keyframes 테스트
-        /*var rotate = document.getElementById('about_macaron_box');
-
-        var count = 0;
-        var intID;
-
-        function countNum(a) {
-            count++;
-            console.log(count);
-            if (count === 10) {
-                //clearInterval(intID);
-                count = 1;
-            }
-            if (count === 1) {
-                a.style.backgroundColor = 'red';
-            } else if (count === 5) {
-                a.style.backgroundColor = 'blue';
-            } else if (count === 9) {
-                a.style.backgroundColor = 'green';
-            }
-        }
-
-        function inter(b) {
-            intID = setInterval(function(){countNum(b);}, 1000);
-        }
-
-        inter(rotate);*/
-    </script>
 </body>
 
 </html>

@@ -40,7 +40,7 @@
 
  function signPositionRight() {
      signCount++;
-     if (signCount > carrerNumber - 1) signCount = number - 1;
+     if (signCount > carrerNumber - 1) signCount = carrerNumber - 1;
      signImgMov(signCount);
      signArrow(carrerNumber);
  }
@@ -60,9 +60,6 @@
      } else if (window.innerWidth <= 759) {
          signImgMovCount(positionNum, 2, 145);
      }
-
-
-
  }
 
  if (window.innerWidth >= 1280) {
@@ -83,11 +80,12 @@
          signArrowRight.style.opacity = 1;
      }
  }
-
+const signMovePoint = document.getElementById('sign_move_point');
  function initFive() {
      picNum();
      signArrowLeft.addEventListener('click', signPositionLeft);
      signArrowRight.addEventListener('click', signPositionRight);
+     swipeTouch(signMovePoint, signPositionLeft, signPositionRight, 7);
  }
 
  initFive();
@@ -113,8 +111,6 @@
 
 
 
- var varUA = navigator.userAgent.platform; //userAgent 값 얻기
-
  if (window.innerWidth >= 1280) {
      eMailText.addEventListener('mouseenter', function () {
          eMailText.style.backgroundColor = "#cabbe9";
@@ -124,6 +120,11 @@
          eMailText.style.backgroundColor = "#ffcef3";
      });
      eMailText.addEventListener('click', copyText);
- }else if (window.innerWidth >= 1280 && varUA.match(/i(Phone|Pod)/i) != null) {
-     alert('모바일에선 지원하지 않습니다.');
  }
+
+
+
+ 
+ 
+
+

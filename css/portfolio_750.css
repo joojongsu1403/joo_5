@@ -453,22 +453,36 @@
         background-position: center;
         height: 600px;
     }
+    #skill .wrap{
+        width: 325px;
+        height: 100%;
+    }
     /*skill 스와이프 프레임 (모바일)*/
     #m_chart_position {
         width: 186px;
         height: 450px;
-        position: relative;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         overflow: hidden;
     }
+    .m_chart_in_box {
+        width: 186px;
+        height: 450px;
+        float: left;
+        padding-left: 2px;
+    }
+    .m_chart_in_box:nth-child(2){
+        padding-left: 10px;
+    }
     #chart_box {
-        width: 372px;
+        width: 386px;
         height: 450px;
         position: absolute;
         top: 0;
         left: 0;
+        transition-duration: .6s;
     }
     .circle_chart {
         width: 180px;
@@ -501,7 +515,7 @@
     .circle_chart:nth-child(2) .circle {
         margin-top: 10px;
     }
-    .circle_chart:nth-child(4) .circle {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle {
         margin-top: 10px;
     }
     /*skill 원 안쪽 그라데이션 부분*/
@@ -531,10 +545,10 @@
     }
 
     /*skill 원 안쪽 스킬 로고 틀 부분*/
-    .circle_chart:nth-child(3) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li {
         width: 118px;
     }
-    .circle_chart:nth-child(4) .circle li {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li {
         width: 55px;
     }
 
@@ -547,10 +561,10 @@
     .circle_chart:nth-child(2) .circle li img {
         left: -96px;
     }
-    .circle_chart:nth-child(3) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(1) .circle li img {
         left: -191px;
     }
-    .circle_chart:nth-child(4) .circle li img {
+    .m_chart_in_box:nth-child(2) .circle_chart:nth-child(2) .circle li img {
         left: -330px;
     }
 
@@ -590,6 +604,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         left: 25px;
+        opacity: .4;
     }
     #skill_right {
         background-image: url(../skill/arrow_right_skill.png);
@@ -602,13 +617,17 @@
     section#web {
         height: 548px;
     }
+    #web .wrap{
+        width: 325px;
+        height: 100%;
+    }
     /*web 사이드 타이틀*/
     #web .wrap > p:nth-child(1) {
         font-family: 'NanumGothic';
         font-size: 12px;
         color: #a1eafb;
         float: left;
-        margin-left: 25px;
+        margin-left: -15px;
         margin-top: 25px;
     }
     /*web 메인 타이틀*/
@@ -633,10 +652,6 @@
     }
     /*web 작업물 이미지 뒷편에 이름*/
     #select_frame > p:nth-child(1) {
-        display: none;
-    }
-    /*web 작업물 이미지 앞쪽에 mouseover 요청문구*/
-    #select_frame > p:nth-child(2) {
         display: none;
     }
     /*web 작업물 이미지 전체 크기, 포지션 부분*/
@@ -740,11 +755,11 @@
         font-size: 20px;
     }
     #web_left {
-        left: 30px; 
+        left: 4px; 
         opacity: .2;
     }
     #web_right {
-        right: 30px;
+        right: 4px;
     }
 
     /*4. 섹션 web 끝*/
@@ -753,13 +768,18 @@
         height: 400px;
         background: linear-gradient(-45deg, #ffcef3 20%, #cabbe9, #a1eafb 80%);
     }
+    #sign .wrap{
+        width: 325px;
+        height: 400px;
+    }
+    
     /*sign 사이드 타이틀*/
     #sign .wrap > p:nth-child(1) {
         font-family: 'NanumGothic';
         font-size: 12px;
         color: #fdfdfd;
         float: left;
-        margin-left: 25px;
+        margin-left: -15px;
         margin-top: 25px;
     }
     /*sign 메인 타이틀*/
@@ -870,13 +890,13 @@
     }
 
     #sign_left {
-        left: 14px;
+        left: -10px;
         background-image: url(../sign/arrow_left_sign.png);
         background-size: cover;
     }
 
     #sign_right {
-        right: 14px;
+        right: -10px;
         background-image: url(../sign/arrow_right_sign.png);
         background-size: cover;
     }

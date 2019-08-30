@@ -213,8 +213,49 @@ window.onload = function () {
 
     //3.  section skill start -----------------------------------------------------;
 
-    //3. section skill circle_chart
-
+    // 3. section skill 클릭 이벤트.
+    const skillLeftArrow = document.getElementById('skill_left');
+    const skillRightArrow = document.getElementById('skill_right');
+    
+    function skillAction(){
+        skillLeftArrow.addEventListener('click', skillPositionLeft);
+        skillRightArrow.addEventListener('click', skillPositionRight);
+    }
+    
+    
+    let skillCount = 0;
+    
+    function skillPositionLeft (){
+        skillCount--;
+        if(skillCount <= 0) skillCount = 0; 
+        skillCircleMove(skillCount);
+        skillArrow(skillCount);
+    }
+    function skillPositionRight(){
+        skillCount++;
+        if(skillCount >= 1) skillCount = 1;
+        skillCircleMove(skillCount);
+        skillArrow(skillCount);
+    }
+    const skillMoveObj = document.getElementById('chart_box');
+    
+    //3. section skill 포지션 길이
+    function skillCircleMove(num){
+        skillMoveObj.style.left = - num * 196 + 'px';
+    }
+    
+    //3. section skill 화살표 애니메이션
+    function skillArrow(count) {
+    if (count === 0) {
+        skillLeftArrow.style.opacity = .4;
+        skillRightArrow.style.opacity = 1;
+    } else if (count === 1) {
+        skillRightArrow.style.opacity = .4;
+        skillLeftArrow.style.opacity = 1;
+    } 
+}
+    
+    //3. section skill circle_chart 코닉 그라디언트 애니메이션
     const circle = document.getElementsByClassName('circle');
 
     function draw(max, classname) {
@@ -230,7 +271,7 @@ window.onload = function () {
     }
 
     function drawColor(i, classname) {
-        classname.style.background = `conic-gradient(#fdfdfd 0% ${i}%, transparent ${i}% 100%)`
+        classname.style.background = `conic-gradient(#fdfdfd 0% ${i}%, transparent ${i}% 100%)`;
     }
 
     function initCircle() {
@@ -243,11 +284,10 @@ window.onload = function () {
     //initCircle();
 
 
-
+    //3. 각 브라우저 사이즈별 반응 위치 설정.
     function getCurrentScrollPercentage() {
         return (window.scrollY + window.innerHeight) / document.body.clientHeight * 100;
     }
-
 
     var testCount = 0;
     document.addEventListener('scroll', () => {
@@ -266,6 +306,8 @@ window.onload = function () {
         } else if (window.innerWidth <= 759){
             if(testCount === 0) {
                 initCircle();
+                skillAction();
+                swipeTouch(skillMoveObj, skillPositionLeft, skillPositionRight, 7);
                 testCount = 1;
             } 
         }
@@ -274,9 +316,6 @@ window.onload = function () {
             return;
         }
     });
-
-
-
 
 
 }
