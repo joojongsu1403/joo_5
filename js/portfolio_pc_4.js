@@ -24,8 +24,8 @@
                 webHover[i].addEventListener('mouseleave', function(e) {
                     this.removeChild(creatDiv);
                 });
-                    
-                } else if(window.innerWidth <= 1279 || varUA.indexOf("ipad")>-1){
+                const UserAgent = navigator.platform;
+                } else if(window.innerWidth <= 1279 || UserAgent.match(/i(Phone|Pod)/i)){
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
                     creatDiv.setAttribute('target', '_blank');
