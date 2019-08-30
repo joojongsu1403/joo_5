@@ -124,6 +124,6 @@
          eMailText.style.backgroundColor = "#ffcef3";
      });
      eMailText.addEventListener('click', copyText);
- }else if (window.innerWidth >= 1280 && varUA.match('android /i(Phone|Pod)/i') != null) {
+ }else if (window.innerWidth >= 1280 && varUA.match(/i(Phone|Pod)/i) != null) {
      alert('모바일에선 지원하지 않습니다.');
  }
