@@ -657,47 +657,7 @@
         position: relative;
         transition-duration: .6s;
     }
-    /*web 작업물 이미지 hover 시 효과*/
-    #select_frame > ul li:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: 10px solid #fdfdfd;
-        opacity: 0;
-        transition-duration: .6s;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #select_frame > ul li:hover:before {
-        opacity: 1;
-        border: 4px solid #ffcef3;
-        background-color: rgba(202, 187, 233, .4);
-    }
-
-    #select_frame > ul li:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: 7px solid #fdfdfd;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition-duration: .6s;
-        opacity: 0;
-    }
-
-    #select_frame > ul li:hover:after {
-        opacity: 1;
-        width: 630px;
-        height: 300px;
-        border: 2px solid #fdfdfd;
-    }
+    
 
     /*web 작업물 이미지 hover시 js로 해당 div 생성되었을 때*/
     .select_box {
