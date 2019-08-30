@@ -113,7 +113,7 @@
 
 
 
- var varUA = navigator.userAgent.platfrom; //userAgent 값 얻기
+ var varUA = navigator.userAgent.platform; //userAgent 값 얻기
 
  if (window.innerWidth >= 1280) {
      eMailText.addEventListener('mouseenter', function () {
