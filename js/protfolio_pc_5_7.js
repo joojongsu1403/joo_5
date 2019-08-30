@@ -113,7 +113,7 @@
 
 
 
- var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+ var varUA = navigator.userAgent.platfrom; //userAgent 값 얻기
 
  if (window.innerWidth >= 1280) {
      eMailText.addEventListener('mouseenter', function () {
@@ -124,6 +124,6 @@
          eMailText.style.backgroundColor = "#ffcef3";
      });
      eMailText.addEventListener('click', copyText);
- }else if (window.innerWidth >= 1280 && varUA.match('android') != null || varUA.indexOf("iphone")>-1 || varUA.indexOf("ipad")>-1 || varUA.indexOf("ipod")>-1) {
-     alert('죄송합니다. 모바일에선 지원하지 않습니다.')
+ }else if (window.innerWidth >= 1280 && varUA.match('android /i(Phone|Pod)/i') != null) {
+     alert('모바일에선 지원하지 않습니다.');
  }
