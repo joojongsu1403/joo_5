@@ -13,7 +13,7 @@
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
                     creatDiv.setAttribute('target', '_blank');
-                    creatDiv.innerText = '홈페이지 바로가기';
+                    creatDiv.innerHTML = '<span>홈페이지 바로가기</span>';
                     this.appendChild(creatDiv);
                     // 휠 이벤트 리스너
                     webHover[i].addEventListener("wheel", wheel, {
@@ -24,8 +24,8 @@
                 webHover[i].addEventListener('mouseleave', function(e) {
                     this.removeChild(creatDiv);
                 });
-                const UserAgent = navigator.platform;
-                } else if(window.innerWidth <= 1279 || UserAgent.match(/i(Phone|Pod)/i) != null){
+                    
+                } else if(window.innerWidth <= 1279){
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
                     creatDiv.setAttribute('target', '_blank');
