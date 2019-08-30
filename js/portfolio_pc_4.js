@@ -8,7 +8,7 @@
 
                 const creatDiv = document.createElement('a');
                 
-                if(window.innerWidth >= 1280){
+                if(window.innerWidth >= 1280 || !varUA.indexOf("ipad")>-1){
                 webHover[i].addEventListener('mouseenter', function(e) {
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
@@ -25,7 +25,7 @@
                     this.removeChild(creatDiv);
                 });
                     
-                } else if(window.innerWidth <= 1279){
+                } else if(window.innerWidth <= 1279 || varUA.indexOf("ipad")>-1){
                     creatDiv.classList = 'select_box';
                     creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
                     creatDiv.setAttribute('target', '_blank');
