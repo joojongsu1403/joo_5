@@ -9,6 +9,7 @@
      signFrameChild[0].appendChild(createli);
  }
 
+
  //5. section work_sign 사진 배열.
  const picLi = document.getElementsByClassName('sign_pic');
 
@@ -17,7 +18,6 @@
          picLi[i].style.backgroundImage = `url(sign/sign_pic_con_${i+1}.png)`;
      }
  }
- //picNum();
 
 
  //5. section work_sign 클릭 이벤트.
@@ -28,8 +28,6 @@
  let signCount = 0;
  let carrerNumber;
 
- //signArrowLeft.addEventListener('click', signPositionLeft);
- //signArrowRight.addEventListener('click', signPositionRight);
 
  function signPositionLeft() {
      signCount--;
@@ -90,14 +88,14 @@ const signMovePoint = document.getElementById('sign_move_point');
 
  initFive();
 
+
  //6. carrer 없음.
+
 
  //7. footer 클릭시 주소 복사.
  const eMailText = document.getElementById('email');
  const eMailValue = eMailText.textContent;
- var copyText = function () {
-     copyToAddress(eMailValue.replace(/(\s*)/g, ""))
- };
+
 
  function copyToAddress(val) {
      const t = document.createElement("textarea");
@@ -108,6 +106,12 @@ const signMovePoint = document.getElementById('sign_move_point');
      document.body.removeChild(t);
      alert('이메일 주소가 복사되었습니다.');
  }
+
+
+ var copyText = function () {
+     copyToAddress(eMailValue.replace(/(\s*)/g, ""))
+ };
+
 
 
 

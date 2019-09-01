@@ -6,20 +6,6 @@ window.onload = function () {
     //1. 타이틀 요일 가져오기.
     function buildDay() {
         const today = new Date();
-        /*const lastDate = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-        const dDay = ['토', '일', '월', '화', '수', '목', '금'];
-        let day;
-
-        for (let i = 0; i < lastDate.getDay() + 1; i++) {
-            count = i;
-
-            for (let j = 0; j < dDay.length; j++) {
-                if (count % 7 === j) {
-                    day = dDay[j];
-                    console.log(dDay[j]); //작동 확인용.
-                };
-            };
-        };*/
         const week = ['일', '월', '화', '수', '목', '금', '토'];
         const day = week[today.getDay()];
 
@@ -274,14 +260,14 @@ window.onload = function () {
         classname.style.background = `conic-gradient(#fdfdfd 0% ${i}%, transparent ${i}% 100%)`;
     }
 
-    function initCircle() {
+    function initThird() {
         draw(58, circle[0]);
         draw(51, circle[1]);
         draw(66, circle[2]);
         draw(76, circle[3]);
     }
 
-    //initCircle();
+    //initThird();
 
 
     //3. 각 브라우저 사이즈별 반응 위치 설정.
@@ -294,19 +280,19 @@ window.onload = function () {
         const currentScrollPercentage = getCurrentScrollPercentage();
         const test = document.getElementById('test');
         if (window.innerWidth >= 1280) {
-            if (currentScrollPercentage > 52 && testCount === 0) {
-                initCircle(); //3.
+            if (currentScrollPercentage > 45 && testCount === 0) {
+                initThird(); //3.
                 testCount = 1;
             }
         } else if (window.innerWidth >= 760) {
             if (currentScrollPercentage > 50 && testCount === 0) {
-                initCircle(); //3.
+                initThird(); //3.
                 testCount = 1;
             }
         } else if (window.innerWidth <= 759){
             if(testCount === 0) {
-                initCircle();
-                skillAction();
+                initThird(); //3.
+                skillAction(); 
                 swipeTouch(skillMoveObj, skillPositionLeft, skillPositionRight, 7);
                 testCount = 1;
             } 

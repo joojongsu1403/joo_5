@@ -23,7 +23,7 @@ function webTitle() {
             webHover[i].addEventListener('mouseleave', function (e) {
                 this.removeChild(creatDiv);
             });
-            const UserAgent = navigator.platform;
+            
         } else if (window.innerWidth <= 1279) {
             creatDiv.classList = 'select_box';
             creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
@@ -46,8 +46,6 @@ let webCount = 0; // web 부분에서 움직임을 컨트롤 함.
 
 
 //클릭 이벤트 실행문.
-//webArrowLeft.addEventListener('click', webPositionLeft);
-//webArrowRight.addEventListener('click', webPositionRight);
 
 function webPositionLeft() {
     webCount--;
@@ -123,10 +121,8 @@ function webArrow() {
 
 //4. section work_web 카운터에 맞춰 텍스트 순서 변경
 const webText = document.getElementsByClassName('web_change_text');
-//const webOn = webArrowLeft.onmouseenter
 
 function webUpDownAni(num) {
-    //if(webCount <= 0 && webOn.target) return; //조건걸기 어렵네...
     for (let i = 0; i < webText.length; i++) {
         webText[i].style.top = '10px';
         webText[i].style.opacity = 0;
