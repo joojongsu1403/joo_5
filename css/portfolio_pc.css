@@ -283,10 +283,7 @@
         font-family: 'NanumGothic';
         font-size: 1.2vw;
     }
-    #m_scroll_text{
-        display: none;
-    }
-    
+
     @keyframes down_animate {
         0% {
             top: 0;
