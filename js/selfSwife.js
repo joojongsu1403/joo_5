@@ -36,7 +36,7 @@ function swipeTouch(move, left, right, frame) {
                 startingX = e.touches[0].screenX;
             };
         }, passiveSupported ? {
-            passive: true
+            passive: false
         } : false);
 
         //터치 후 움직임.
@@ -65,7 +65,7 @@ function swipeTouch(move, left, right, frame) {
                 }
             }
         }, passiveSupported ? {
-            passive: true
+            passive: false
         } : false);
 
         //터치 후 손가락 떼는 지점.
@@ -111,7 +111,7 @@ function swipeTouch(move, left, right, frame) {
 
             startingX = 0;
         }, passiveSupported ? {
-            passive: true
+            passive: false
         } : false);
     }
 }
