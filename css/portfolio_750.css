@@ -274,9 +274,6 @@
         left: 50%;
         transform: translate(-50%);
     }
-    #scroll_text{
-        display: none;
-    }
     @keyframes down_animate {
         0% {
             top: 0;
