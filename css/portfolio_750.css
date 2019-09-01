@@ -597,7 +597,6 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        opacity: .7;
     }
     #skill_left {
         background-image: url(../skill/arrow_left_skill.png);
