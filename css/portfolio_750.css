@@ -600,7 +600,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         left: 25px;
-        opacity: .4;
+        opacity: .2;
     }
     #skill_right {
         background-image: url(../skill/arrow_right_skill.png);
@@ -889,6 +889,7 @@
         left: -10px;
         background-image: url(../sign/arrow_left_sign.png);
         background-size: cover;
+        opacity: .2;
     }
 
     #sign_right {
