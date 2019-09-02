@@ -961,7 +961,7 @@
         margin-top: 5px;
     }
     /*carrer 텍스트 구획 타이틀*/
-    .carrer_text_in_box p {
+    .carrer_text_in_box li:nth-child(1) {
         font-size: 32px;
         font-family: 'Sanseriffic';
         margin-bottom: 14px;
@@ -969,7 +969,7 @@
         color: #ffcef3;
         margin-top: 16px;
     }
-    .carrer_text_in_box:nth-child(1) p {
+    .carrer_text_in_box:nth-child(1) > li:nth-child(1) {
         /*margin-top: 50px;*/
     }
     /*carrer 텍스트 구획 내용*/
@@ -986,7 +986,7 @@
     .carrer_text_in_box li:last-child{
         margin-bottom: 30px;
     }
-    .carrer_text_in_box:nth-child(3) > p {
+    .carrer_text_in_box:nth-child(3) > li:nth-child(1) {
         margin-bottom: 16px;
         color: #cabbe9;
     }
