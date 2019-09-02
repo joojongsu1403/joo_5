@@ -300,7 +300,7 @@
 
     /*1.헤더영역 끝*/
     /*섹션 공통*/
-    section {
+    .all_wrap {
         width: 100%;
         height: 667px;
         float: left;
@@ -315,7 +315,7 @@
     }
     /*섹션 공통 끝*/
     /*2.섹션 about 시작*/
-    section#about {
+    #about {
         height: 800px;
     }
     /*about 마카롱 위치*/
@@ -399,7 +399,7 @@
         font-size: 12px;
         font-family: 'NanumGothic';
         margin-top: 8px;
-        opacity: .7s;
+        opacity: .7;
     }
     /*about 프로필*/
     #about_profile {
@@ -443,7 +443,7 @@
 
     /*2.섹션 about 끝*/
     /*3. 섹션 skill 시작*/
-    section#skill {
+    #skill {
         background-image: url(../skill/skill_bgimage.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -610,7 +610,7 @@
     }
     /*3. 섹션 skill 끝*/
     /*4. 섹션 web 시작*/
-    section#web {
+    #web {
         height: 548px;
     }
     #web .wrap{
@@ -760,7 +760,7 @@
 
     /*4. 섹션 web 끝*/
     /*5. 섹션 sign 시작*/
-    section#sign {
+    #sign {
         height: 400px;
         background: linear-gradient(-45deg, #ffcef3 20%, #cabbe9, #a1eafb 80%);
     }
@@ -899,7 +899,7 @@
     }
     /*5. 섹션 sign 끝*/
      /*6. 섹션 carrer 시작*/
-    section#carrer {
+    #carrer {
         height: 900px;
     }
     /*carrer 배경*/
