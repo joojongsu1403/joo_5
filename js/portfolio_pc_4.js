@@ -10,7 +10,7 @@ function webTitle() {
         if (window.innerWidth >= 1280) {
             webHover[i].addEventListener('mouseenter', function (e) {
                 creatDiv.classList = 'select_box';
-                creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
+                creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_j${i+1}/`);
                 creatDiv.setAttribute('target', '_blank');
                 creatDiv.innerHTML = '<span>홈페이지 바로가기</span>';
                 this.appendChild(creatDiv);
@@ -26,7 +26,7 @@ function webTitle() {
             
         } else if (window.innerWidth <= 1279) {
             creatDiv.classList = 'select_box';
-            creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_${i+1}/`);
+            creatDiv.setAttribute('href', `https://joojongsu1403.github.io/joo_j${i+1}/`);
             creatDiv.setAttribute('target', '_blank');
             webHover[i].appendChild(creatDiv);
         }
