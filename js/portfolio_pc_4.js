@@ -101,6 +101,19 @@ function webImgMov(num) {
 
 }
 
+//4. section work_web 이미지 추가에 따른 width 변경.
+function webImgWidth(){
+    if(window.innerWidth >= 1280){
+        webFrameWheel.style.width = (880 * webHoverLength) - 200+'px';
+    } else if(window.innerWidth >= 760){
+        webFrameWheel.style.width = (562 * webHoverLength)+'px';
+    } else if (window.innerWidth <= 759){
+        webFrameWheel.style.width = (325 * webHoverLength)+'px';
+        
+    }
+}
+
+
 
 //4. section work_web 화살표 반응
 const webArrGuide = document.querySelector('#web_click_guide');
@@ -137,9 +150,9 @@ function webUpDownAni(num) {
 
 
 //4. section work_web 하단 텍스트 배열
-const webHomeage = ['new', 'renewal', 'renewal', 'new'];
-const webType = ['my portfolio ver.2', 'fashion eye glasses', 'my portfolio ver.1', 'game development'];
-const webPeriod = ['2019.5.1~ 2019.5.27', '2018.5.1~ 2018.5.20', '2018.5.21~ 2018.6.7', '2018.4.12~ 2018.4.30'];
+const webHomeage = ['new', 'renewal', 'renewal', 'new', 'new'];
+const webType = ['my portfolio ver.2', 'fashion eye glasses', 'my portfolio ver.1', 'game development', 'imagine restaurant'];
+const webPeriod = ['2019.5.1~ 2019.5.27', '2018.5.1~ 2018.5.20', '2018.5.21~ 2018.6.7', '2018.4.12~ 2018.4.30', '2019.9.3~ ing'];
 
 function webTextNum(num) {
     webText[0].innerText = webHomeage[num].toUpperCase();
@@ -154,6 +167,7 @@ function initFour() {
     webArrowRight.addEventListener('click', webPositionRight);
     swipeTouch(webFrameWheel, webPositionLeft, webPositionRight, 7);
     webTitle(); // 4. 첫번째 함수
+    webImgWidth();
 }
 
 initFour();

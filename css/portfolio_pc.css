@@ -642,7 +642,6 @@
     
     /*web 작업물 이미지 전체 크기, 포지션 부분*/
     #select_frame > ul {
-        width: 3320px;
         height: 100%;
         position: absolute;
         top: 0;
