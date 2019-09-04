@@ -1,0 +1,100 @@
+@media all and (min-width:760px){
+    #popup {
+            width: 300px;
+            height: 500px;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            background-color: rgba(255, 255, 255, .7);
+            z-index: 2;
+            text-align: center;
+        }
+
+        #popup_icon {
+            width: 90px;
+            height: 50px;
+            position: relative;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        #popup_icon>i {
+            font-size: 36px;
+            line-height: 50px;
+        }
+
+        #popup>p {
+            margin-top: 30px;
+        }
+
+        #popup>p>span {
+            color: red;
+        }
+
+        #popup>p:nth-child(6) {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 50px;
+            height: auto;
+            margin-top: 20px;
+        }
+}
+
+@media all and (max-width:759px){
+    #popup {
+            width: 300px;
+            height: 200px;
+            position: fixed;
+            top: 120px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(255, 255, 255, .7);
+            z-index: 2;
+            text-align: center;
+        }
+
+        #popup_icon {
+            width: 90px;
+            height: 50px;
+            position: relative;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        #popup_icon>i {
+            font-size: 36px;
+            line-height: 50px;
+        }
+
+        #popup>p {
+            margin-top: 30px;
+            display: none;
+        }
+        
+        #popup>p:nth-child(2){
+        display: block;
+        }
+        #popup>p>span {
+            color: red;
+        }
+
+        #popup>p:nth-child(6) {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 50px;
+            height: auto;
+            margin-top: 20px;
+        }
+}

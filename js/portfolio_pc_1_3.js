@@ -1,5 +1,14 @@
 window.onload = function () {
+    
+    /* 팝업 클로저*/
+    const popUp = document.getElementById('popup');
+    const popupClose = document.getElementById('popupclose');
 
+    popupClose.addEventListener('click', function () {
+        popUp.style.display = 'none';
+    });
+    
+    
     //1.  header title start -----------------------------------------------------;
 
 
