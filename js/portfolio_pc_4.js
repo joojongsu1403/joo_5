@@ -152,7 +152,7 @@ function webUpDownAni(num) {
 //4. section work_web 하단 텍스트 배열
 const webHomeage = ['new', 'renewal', 'renewal', 'new', 'new'];
 const webType = ['my portfolio ver.2', 'fashion eye glasses', 'my portfolio ver.1', 'game development', 'imagine restaurant'];
-const webPeriod = ['2019.5.1~ 2019.5.27', '2018.5.1~ 2018.5.20', '2018.5.21~ 2018.6.7', '2018.4.12~ 2018.4.30', '2019.9.3~ ing'];
+const webPeriod = ['2019.5.1~ 2019.5.27', '2018.5.1~ 2018.5.20', '2018.5.21~ 2018.6.7', '2018.4.12~ 2018.4.30', '2019.9.3~ 2019.9.4'];
 
 function webTextNum(num) {
     webText[0].innerText = webHomeage[num].toUpperCase();
